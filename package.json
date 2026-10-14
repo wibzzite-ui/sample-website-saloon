@@ -1,0 +1,22 @@
+{
+  "name": "luvai-salon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build:carousel": "esbuild components/CircularCarousel/PortfolioCarouselApp.jsx --bundle --outfile=scripts/circular-carousel.bundle.js --jsx=automatic --minify",
+    "build": "npm run build:carousel",
+    "watch:carousel": "esbuild components/CircularCarousel/PortfolioCarouselApp.jsx --bundle --outfile=scripts/circular-carousel.bundle.js --jsx=automatic --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
